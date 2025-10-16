@@ -1,6 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import hero from '../../assets/hero.jpg'
+import FormStartup from '../Startup/FormStartup';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 function HeroSection() {
+  const [showForm,setShowForm] = useState(false);
+  const {user} = useSelector((state)=>state.auth);
+  
+  const navigate = useNavigate();
+  const hendlePublicClick = () =>{
+    if(!user){
+      navigate("/login")
+    }else{
+      setShowForm(true)
+    }
+  }
   return (
     <section className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,12 +28,11 @@ function HeroSection() {
               marocain
             </p>
             <div className="mt-8 text-center">
-              <a
-                href="#"
+              <button onClick={hendlePublicClick}
                 className="inline-block rounded bg-[#4A80FF] px-6 py-3 font-medium text-white shadow hover:bg-blue-700 transition"
               >
                 Publier ma Startup
-              </a>
+              </button>
             </div>
           </div>
           <div className="flex justify-center md:justify-end">
@@ -31,6 +44,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
+      {showForm && <FormStartup onClose={() => setShowForm(false)} />}
     </section>
   );
 }

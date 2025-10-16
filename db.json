@@ -1,14 +1,14 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "mouad",
       "email": "mouad@example.com",
       "password": "123456",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "ayoub",
       "email": "ayoub@example.com",
       "password": "password",
@@ -20,6 +20,239 @@
       "email": "test@gmail.com",
       "role": "Utilisateur",
       "password": "12345678"
+    },
+    {
+      "id": "c41c",
+      "username": "saad",
+      "email": "saad@gmail.com",
+      "role": "Startup",
+      "password": "123456"
+    },
+    {
+      "id": "9446",
+      "username": "ayoub",
+      "email": "ayoub@gmail.com",
+      "role": "Investisseur",
+      "password": "123456"
+    }
+  ],
+  "startups": [
+    {
+      "name": "itProTests",
+      "secteur": "EdTech",
+      "localisation": "casabalncw",
+      "fondateur": "mouad",
+      "description": "startup devlopment wadcd esdwsxd",
+      "email": "dev@extra.com",
+      "dateCreation": "2010-02-14",
+      "logo": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760481707/bavtzjc3hqxrqhw2c4yv.jpg",
+      "id": "1"
+    },
+    {
+      "name": "devInfo",
+      "secteur": "FinTech",
+      "localisation": "rabatds",
+      "fondateur": "ayoub",
+      "description": "startup devlwsq secdopment",
+      "email": "dev@extra.com",
+      "dateCreation": "2012-02-14",
+      "logo": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760447396/yzpuad2sxdrtmyj0hmxh.jpg",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Test",
+      "secteur": "dev",
+      "logo": "src/assets/startup.jpg",
+      "localisation": "casabalnca",
+      "description": "startup devlopment",
+      "email": "dev@extra.com",
+      "fondateur": "mouad",
+      "dateCreation": "12/05/2008"
+    },
+    {
+      "id": "4",
+      "name": "Res",
+      "secteur": "devlo",
+      "logo": "src/assets/startup.jpg",
+      "localisation": "rabat",
+      "description": "startup devlopment",
+      "email": "dev@extra.com",
+      "fondateur": "ayoub",
+      "dateCreation": "12/05/2010"
+    },
+    {
+      "id": "5",
+      "name": "Artis",
+      "secteur": "dev",
+      "logo": "src/assets/startup.jpg",
+      "localisation": "casabalnca",
+      "description": "startup devlopment",
+      "email": "dev@extra.com",
+      "fondateur": "mouad",
+      "dateCreation": "12/05/2003"
+    },
+    {
+      "id": "6",
+      "name": "cyber",
+      "secteur": "devlo",
+      "logo": "src/assets/startup.jpg",
+      "localisation": "rabat",
+      "description": "startup devlopment",
+      "email": "dev@extra.com",
+      "fondateur": "ayoub",
+      "dateCreation": "12/05/2009"
+    },
+    {
+      "id": "c627",
+      "name": "saaddws",
+      "secteur": "FinTech",
+      "localisation": "wdd",
+      "fondateur": "edcv",
+      "description": "wsdwsc",
+      "email": "secddc@drfvc",
+      "dateCreation": "2014-02-14",
+      "logo": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760450518/zgc7fjvvqw2oflkkiduq.jpg"
+    },
+    {
+      "id": "557f",
+      "name": "itNova",
+      "secteur": "AI",
+      "localisation": "raba",
+      "fondateur": "ayoub",
+      "description": "Inspiring card designs, illustrations, and graphic elements",
+      "email": "itNova@cam.ca",
+      "dateCreation": "2016-03-02",
+      "logo": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760482065/urpmf9vurkurapghm81g.jpg"
+    },
+    {
+      "id": "b9ef",
+      "name": "itStartup",
+      "secteur": "AI",
+      "localisation": "casabalnca",
+      "fondateur": "Mouad",
+      "description": "casacs wsc wscc ewc wed ce ",
+      "email": "itStartup@contact.ma",
+      "dateCreation": "2019-12-11",
+      "logo": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760525761/jhfowjaklrpoxjoubjtt.jpg",
+      "userCreation": "c41c"
+    },
+    {
+      "id": "06d7",
+      "name": "sacd",
+      "secteur": "EdTech",
+      "localisation": "dsc ",
+      "fondateur": "mmmd",
+      "description": "ds  ds dscewfwgb",
+      "email": "kcj@ldsml",
+      "dateCreation": "2023-02-16",
+      "logo": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760560585/vdyrsl1ogvmr7dgsxhl7.jpg",
+      "userCreation": "c41c"
+    }
+  ],
+  "evenements": [
+    {
+      "id": "1",
+      "name": "devInfo",
+      "lieu": "casabalnca",
+      "image": "src/assets/startup.jpg",
+      "description": "casacs wsc wscc ewc wed ce ",
+      "date": "12/01/2025",
+      "name_startup": "itNova"
+    },
+    {
+      "id": "14fd",
+      "name": "wqd",
+      "lieu": "edc",
+      "description": "edcecv dc",
+      "date": "2025-12-02",
+      "image": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760539244/bgvwrdwtmtiw5gwfjtjq.jpg"
+    },
+    {
+      "id": "4200",
+      "name": "sac",
+      "lieu": "dac",
+      "description": "dscds",
+      "date": "2025-10-23T11:27",
+      "image": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760559913/ldnmfghzi5vvwspprelt.jpg"
+    },
+    {
+      "id": "e4e7",
+      "name": "ewqd",
+      "lieu": "ewfc",
+      "description": "edcf",
+      "date": "2025-10-23T23:35",
+      "image": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760560425/zscj0obucaij7q9q9osg.jpg"
+    },
+    {
+      "id": "48fd",
+      "name": "wdc",
+      "lieu": "dcssd",
+      "description": "dsc",
+      "date": "2025-10-24T21:37",
+      "image": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760560505/kngkj72vytcvowytafzi.jpg"
+    }
+  ],
+  "myEvents": [
+    {
+      "id": "48fd",
+      "name": "wdc",
+      "lieu": "dcssd",
+      "description": "dsc",
+      "date": "2025-10-24T21:37",
+      "image": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760560505/kngkj72vytcvowytafzi.jpg",
+      "userId": "9446"
+    },
+    {
+      "id": "e4e7",
+      "name": "ewqd",
+      "lieu": "ewfc",
+      "description": "edcf",
+      "date": "2025-10-23T23:35",
+      "image": "https://res.cloudinary.com/dh8xcvzyi/image/upload/v1760560425/zscj0obucaij7q9q9osg.jpg",
+      "userId": "c41c"
+    },
+    {
+      "id": "1",
+      "name": "devInfo",
+      "lieu": "casabalnca",
+      "image": "src/assets/startup.jpg",
+      "description": "casacs wsc wscc ewc wed ce ",
+      "date": "12/01/2025",
+      "name_startup": "itNova",
+      "userId": "c41c"
+    }
+  ],
+  "discussions": [
+    {
+      "id": "1",
+      "name": "mouad",
+      "date": "12/01/2025",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laborum"
+    },
+    {
+      "id": "2b80",
+      "commentaire": "wdcd",
+      "name": "saad",
+      "date": "10/16/2025, 12:08:40 AM"
+    },
+    {
+      "id": "06fc",
+      "commentaire": "dwe",
+      "name": "saad",
+      "date": "10/16/2025, 12:27:42 AM"
+    },
+    {
+      "id": "4af8",
+      "commentaire": "dccd",
+      "name": "saad",
+      "date": "10/16/2025, 12:36:49 AM"
+    },
+    {
+      "id": "2420",
+      "commentaire": "wdwed",
+      "name": "ayoub",
+      "date": "10/16/2025, 12:50:41 AM"
     }
   ]
 }

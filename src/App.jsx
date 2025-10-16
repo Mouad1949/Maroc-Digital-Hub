@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Accuiel from "./Pages/Accuiel";
 import Dashbord from "./Pages/Dashbord";
+import Discussion from "./Pages/discussion";
+import MesEvents from "./Pages/MesEvents";
 import Startup from "./Pages/Startup";
 import Evenement from "./Pages/Evenement";
 import Navbar from "./Components/layout/Navbar";
@@ -23,6 +25,22 @@ function App() {
                 element={
                   <ProtectedRoute>
                     <Dashbord />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/discussions"
+                element={
+                  <ProtectedRoute>
+                    <Discussion />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/mes evenement"
+                element={
+                  <ProtectedRoute>
+                    <MesEvents />
                   </ProtectedRoute>
                 }
               />

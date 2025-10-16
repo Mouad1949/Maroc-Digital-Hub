@@ -34,6 +34,7 @@ const initialState = {
 
 export const registerUser = createAsyncThunk(
   "auth/registerUser",
+  
   async(userData,thunkAPI) =>{
     try{
         const res = await axios.post("http://localhost:3000/users",userData);
@@ -54,9 +55,16 @@ const authSlice = createSlice({
       localStorage.removeItem("user");
       localStorage.removeItem("token");
     },
-  },
+
+    updateUserRole: (state, action) => {
+      if (state.user) {
+        state.user.role = action.payload; 
+      }
+    },
+  }, 
+
   extraReducers: (builder) => {
-    // ? Login
+    // 🔹 Login
     builder
       .addCase(loginUser.pending, (state) => {
         state.loading = true;
@@ -74,24 +82,22 @@ const authSlice = createSlice({
         state.error = action.payload;
       });
 
-      //? Register
-
-      builder
-      .addCase(registerUser.pending,(state)=>{
-        state.loading = true
-        state.error = null
+    // 🔹 Register
+    builder
+      .addCase(registerUser.pending, (state) => {
+        state.loading = true;
+        state.error = null;
       })
-      .addCase(registerUser.fulfilled,(state,action)=>{
-        state.loading = false
-        state.user = action.payload
+      .addCase(registerUser.fulfilled, (state, action) => {
+        state.loading = false;
+        state.user = action.payload;
       })
-      .addCase(registerUser.rejected, (state,action)=>{
+      .addCase(registerUser.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
-      })
-
+      });
   },
 });
 
-export const { logout } = authSlice.actions;
+export const { logout ,updateUserRole } = authSlice.actions;
 export default authSlice.reducer;

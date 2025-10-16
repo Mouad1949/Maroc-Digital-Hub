@@ -5,7 +5,12 @@ import ComponentSearch from '../Components/Accuiel/ComponentSearch';
 import ComponentStartup from '../Components/Accuiel/ComponentStartup';
 import ComponentEvents from '../Components/Accuiel/ComponentEvents';
 import StartupMois from '../Components/Accuiel/StartupMois';
+import { useState } from 'react';
 function Accuiel() {
+  const [searchTerm , setSearchTerm] = useState('');
+  const [selectedSector, setSelectedSector] = useState("All");
+  const [itemsPerPage, setItemsPerPage] = useState(8);
+  const [currentPage, setCurrentPage] = useState(1);
   return (
     <div>
       <div className='p-4'>
@@ -15,10 +20,17 @@ function Accuiel() {
         <DernieresStartup />
       </div>
       <div className='p-4'>
-        <ComponentSearch />
+        <ComponentSearch searchTerm={searchTerm} setSearchTerm={setSearchTerm} selectedSector={selectedSector}
+        setSelectedSector={setSelectedSector}
+        itemsPerPage={itemsPerPage}
+        setItemsPerPage={setItemsPerPage}
+        />
       </div>
       <div className='p-4'>
-        <ComponentStartup />
+        <ComponentStartup searchTerm={searchTerm}  selectedSector={selectedSector}
+        itemsPerPage={itemsPerPage}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}/>
       </div>
       <div className='p-4'>
         <ComponentEvents />

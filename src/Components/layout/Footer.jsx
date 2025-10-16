@@ -2,15 +2,15 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className="bg-[#4A80FF] w-full bottom-0">
+    <footer className="bg-blue-200 w-full bottom-0">
         <div className="max-w-screen mx-auto px-4 py-12 sm:px-6 lg:px-8">
           {/* Use grid with 3 columns */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
             
             {/* Left Section */}
             <div>
-              <h3 className="text-[#FFFFFF] font-bold text-2xl">Maroc Digital Hub</h3>
-              <p className="mt-4 text-[#FFFFFF] text-sm">
+              <h3 className="text-[#000] font-bold text-2xl">Maroc Digital Hub</h3>
+              <p className="mt-4 text-[#000] text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, doloremque. Ratione impedit animi magnam dolorem ea omnis, eum corrupti, vero pariatur aperiam molestias illo accusantium? Numquam, quae temporibus? Earum, at!
               </p>
 
@@ -19,7 +19,7 @@ function Footer() {
 
                 {/* Center Section */}
                 <div className="flex flex-col items-center" >
-                  <a href="mailto:contact@artconnect.ma" className="text-[#FFFFFF] transition hover:opacity-75">contact@artconnect.ma</a>
+                  <a href="mailto:contact@artconnect.ma" className="text-[#000] transition hover:opacity-75">contact@artconnect.ma</a>
                   <ul className="mt-8 flex gap-6">
                     
                       <li>
@@ -27,7 +27,7 @@ function Footer() {
                         href="#"
                         rel="noreferrer"
                         target="_blank"
-                        className="text-[#FFFFFF] transition hover:opacity-75"
+                        className="text-[#000] transition hover:opacity-75"
                       >
                         <span className="sr-only">Facebook</span>
 
@@ -45,7 +45,7 @@ function Footer() {
                         href="#"
                         rel="noreferrer"
                         target="_blank"
-                        className="text-[#FFFFFF] transition hover:opacity-75"
+                        className="text-[#000] transition hover:opacity-75"
                       >
                         <span className="sr-only">Instagram</span>
 
@@ -63,7 +63,7 @@ function Footer() {
                           href="https://wa.me/212600000000"
                           rel="noreferrer"
                           target="_blank"
-                          className="text-[#FFFFFF] transition hover:opacity-75"
+                          className="text-[#000] transition hover:opacity-75"
                         >
                           <span className="sr-only">WhatsApp</span>
 
@@ -83,7 +83,7 @@ function Footer() {
                         href="#"
                         rel="noreferrer"
                         target="_blank"
-                        className="text-[#FFFFFF] transition hover:opacity-75"
+                        className="text-[#000] transition hover:opacity-75"
                       >
                         <span className="sr-only">Dribbble</span>
 
@@ -115,7 +115,7 @@ function Footer() {
 
         {/* Bottom Copyright */}
         <div className="pb-4">
-          <p className="text-xs text-[#FFFFFF] text-center">
+          <p className="text-xs text-[#000] text-center">
             © 2025 ArtConnect Maroc. Tous droits réservés.
           </p>
         </div>
